@@ -7,7 +7,7 @@ export default function App() {
   const [screen, setScreen] = useState("user");
 
   return (
-    <View style={{ flex: 1, backgroundColor: "#f2f2f2"  }}>
+    <View style={{ flex: 1, backgroundColor: "#f2f2f2" }}>
       {screen === "user" ? (
         <UserUpload goToAdmin={() => setScreen("admin")} />
       ) : (
